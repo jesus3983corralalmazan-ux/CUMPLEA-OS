@@ -1480,9 +1480,6 @@ letter-spacing:6px;
 opacity:.7;
 
 }
-
-/* RESPONSIVE */
-
 /* =========================
 RESPONSIVE
 ========================= */
@@ -1525,45 +1522,47 @@ left:11px;
 
 .titulo{
 
+font-size:60px;
 
-font-size:clamp(58px,15vw,72px);
+line-height:1;
 
-line-height:.92;
+letter-spacing:0px;
 
-letter-spacing:1px;
+padding:0 12px;
 
-padding:0 14px;
+text-align:center;
 
 word-break:normal;
 
 overflow-wrap:normal;
 
-}
+white-space:normal;
 
 }
 
 .titulo-seccion{
 
-
-font-size:clamp(44px,11vw,58px);
+font-size:50px;
 
 line-height:1;
 
-letter-spacing:1px;
+letter-spacing:0px;
 
 margin-bottom:70px;
 
 padding:0 10px;
 
+text-align:center;
+
 word-break:normal;
 
 overflow-wrap:normal;
 
+white-space:normal;
+
 }
 
-
-
-
+}
 
 /* =========================
 MOBILE
@@ -1627,15 +1626,21 @@ width:92%;
 
 .titulo{
 
-font-size:72px;
+font-size:52px;
 
-line-height:.88;
+line-height:1;
 
-letter-spacing:2px;
+letter-spacing:0px;
 
-padding:0 10px;
+padding:0 12px;
 
-word-break:break-word;
+text-align:center;
+
+word-break:normal;
+
+overflow-wrap:normal;
+
+white-space:normal;
 
 }
 
@@ -1671,17 +1676,23 @@ height:430px;
 
 .titulo-seccion{
 
-font-size:54px;
+font-size:42px;
 
-line-height:.9;
+line-height:1;
 
-letter-spacing:2px;
+letter-spacing:0px;
 
 margin-bottom:70px;
 
 padding:0 10px;
 
-word-break:break-word;
+text-align:center;
+
+word-break:normal;
+
+overflow-wrap:normal;
+
+white-space:normal;
 
 }
 
@@ -1741,7 +1752,6 @@ font-size:15px;
 
 .dj-bar{
 
-
 position:fixed !important;
 
 top:15px;
@@ -1756,7 +1766,7 @@ display:flex;
 align-items:center;
 gap:15px;
 
-padding:16px 24px;
+padding:14px 20px;
 
 border-radius:80px;
 
@@ -1770,7 +1780,16 @@ backdrop-filter:blur(25px);
 
 box-shadow:
 
-0 15px 45px rgba(0,0,)
+0 15px 45px rgba(0,0,0,.45),
+
+0 0 35px rgba(255,214,0,.15);
+
+width:92vw;
+
+max-width:92vw;
+
+justify-content:center;
+
 }
 
 }
