@@ -1513,33 +1513,45 @@ left:11px;
 
 .titulo{
 
-font-size:clamp(60px,16vw,120px);
 
-line-height:.9;
+font-size:clamp(58px,15vw,72px);
 
-letter-spacing:3px;
+line-height:.92;
 
-padding:0 10px;
+letter-spacing:1px;
 
-word-break:break-word;
+padding:0 14px;
+
+word-break:normal;
+
+overflow-wrap:normal;
+
+}
 
 }
 
 .titulo-seccion{
 
-font-size:clamp(48px,12vw,80px);
 
-line-height:.95;
+font-size:clamp(44px,11vw,58px);
 
-letter-spacing:2px;
+line-height:1;
+
+letter-spacing:1px;
+
+margin-bottom:70px;
 
 padding:0 10px;
 
-word-break:break-word;
+word-break:normal;
+
+overflow-wrap:normal;
 
 }
 
-}
+
+
+
 
 /* =========================
 MOBILE
@@ -1717,20 +1729,36 @@ font-size:15px;
 
 .dj-bar{
 
-top:10px;
+
+position:fixed !important;
+
+top:15px;
 
 left:50%;
 
-transform:translateX(-50%) scale(.88);
+transform:translateX(-50%);
 
-width:92vw;
+z-index:999999;
 
-justify-content:center;
+display:flex;
+align-items:center;
+gap:15px;
 
-position:fixed;
+padding:16px 24px;
 
-z-index:9999;
+border-radius:80px;
 
+background:rgba(0,0,0,.60);
+
+border:1px solid rgba(255,255,255,.10);
+
+backdrop-filter:blur(25px);
+
+-webkit-backdrop-filter:blur(25px);
+
+box-shadow:
+
+0 15px 45px rgba(0,0,)
 }
 
 }
