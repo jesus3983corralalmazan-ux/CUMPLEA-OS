@@ -283,31 +283,36 @@ transform:translateY(-30px);
 
 position:fixed;
 
-top:20px;
-right:20px;
+top:18px;
+left:50%;
 
-z-index:999;
+transform:translateX(-50%);
+
+z-index:9999;
 
 display:flex;
 align-items:center;
-gap:14px;
+gap:15px;
 
 padding:16px 24px;
 
 border-radius:70px;
 
-background:rgba(0,0,0,.45);
+background:rgba(0,0,0,.55);
 
-border:2px solid rgba(255,214,0,.25);
+border:1px solid rgba(255,255,255,.08);
 
-backdrop-filter:blur(20px);
+backdrop-filter:blur(25px);
 
 box-shadow:
 
-0 0 40px rgba(255,214,0,.15),
+0 15px 45px rgba(0,0,0,.55),
 
-0 0 80px rgba(0,87,255,.08);
+0 0 40px rgba(255,212,59,.15);
 
+width:max-content;
+
+max-width:92vw;
 }
 
 .disco{
@@ -1030,67 +1035,6 @@ opacity:.7;
 
 }
 
-/* RESPONSIVE */
-
-@media(max-width:900px){
-
-.imagenes-premium{
-grid-template-columns:1fr;
-}
-
-.foto{
-height:480px;
-}
-
-}
-
-@media(max-width:600px){
-
-.hero{
-padding-top:170px;
-}
-
-.sobre{
-height:320px;
-}
-
-.sobre h2{
-font-size:44px;
-}
-
-.titulo{
-font-size:95px;
-}
-
-.nombre{
-font-size:72px;
-}
-
-.foto{
-height:430px;
-}
-
-.badge{
-font-size:10px;
-letter-spacing:3px;
-}
-
-.subtitulo{
-font-size:16px;
-line-height:1.7;
-}
-
-.dj-bar{
-
-top:12px;
-right:12px;
-
-transform:scale(.92);
-
-}
-
-}
-
 /* ITINERARIO */
 
 .seccion{
@@ -1527,7 +1471,21 @@ opacity:.7;
 
 /* RESPONSIVE */
 
+/* =========================
+RESPONSIVE
+========================= */
+
 @media(max-width:900px){
+
+.imagenes-premium{
+grid-template-columns:1fr;
+}
+
+.foto{
+height:480px;
+}
+
+/* TIMELINE */
 
 .timeline::before{
 left:20px;
@@ -1551,67 +1509,159 @@ text-align:left;
 left:11px;
 }
 
-}
+/* TITULOS */
 
-@media(max-width:600px){
+.titulo{
+
+font-size:clamp(60px,16vw,120px);
+
+line-height:.9;
+
+letter-spacing:3px;
+
+padding:0 10px;
+
+word-break:break-word;
+
+}
 
 .titulo-seccion{
-font-size:52px;
-}
 
-.timeline-card{
-padding:32px;
-}
+font-size:clamp(48px,12vw,80px);
 
-.timeline-card h3{
-font-size:30px;
-}
+line-height:.95;
 
-.frase-box{
-padding:65px 25px;
-}
+letter-spacing:2px;
 
-.btn-confirmar{
+padding:0 10px;
 
-width:100%;
-
-padding:24px 20px;
-
-font-size:15px;
+word-break:break-word;
 
 }
 
 }
+
+/* =========================
+MOBILE
+========================= */
 
 @media(max-width:600px){
 
+.hero{
+padding-top:170px;
+}
+
+/* SOBRE */
+
 .sobre{
-
 height:320px;
-
 }
 
 .solapa{
 
 top:-25px;
+
 height:210px;
 
 }
 
 .sobre h2{
 
-font-size:40px;
+font-size:38px;
+
 line-height:1.1;
+
+letter-spacing:3px;
 
 }
 
 .sobre p{
 
-font-size:11px;
+font-size:10px;
+
+letter-spacing:3px;
+
+}
+
+/* BADGE */
+
+.badge{
+
+font-size:10px;
+
+letter-spacing:3px;
+
+line-height:1.6;
+
+padding:14px 18px;
+
+width:92%;
+
+}
+
+/* TITULO GRANDE */
+
+.titulo{
+
+font-size:72px;
+
+line-height:.88;
+
+letter-spacing:2px;
+
+padding:0 10px;
+
+word-break:break-word;
+
+}
+
+/* SUB */
+
+.subtitulo{
+
+font-size:16px;
+
+line-height:1.8;
+
+padding:0 15px;
+
+}
+
+/* NOMBRES */
+
+.nombre{
+
+font-size:58px;
 
 letter-spacing:4px;
 
 }
+
+/* FOTO */
+
+.foto{
+height:430px;
+}
+
+/* ITINERARIO */
+
+.titulo-seccion{
+
+font-size:54px;
+
+line-height:.9;
+
+letter-spacing:2px;
+
+margin-bottom:70px;
+
+padding:0 10px;
+
+word-break:break-word;
+
+}
+
+/* CARD */
 
 .timeline-card{
 
@@ -1630,14 +1680,56 @@ font-size:26px;
 .timeline-card p{
 
 font-size:14px;
+
 line-height:1.7;
+
+}
+
+/* FRASE */
+
+.frase-box{
+
+padding:65px 25px;
 
 }
 
 .frase-box p{
 
 font-size:22px;
+
 line-height:1.8;
+
+}
+
+/* BOTON */
+
+.btn-confirmar{
+
+width:100%;
+
+padding:24px 20px;
+
+font-size:15px;
+
+}
+
+/* MUSICA */
+
+.dj-bar{
+
+top:10px;
+
+left:50%;
+
+transform:translateX(-50%) scale(.88);
+
+width:92vw;
+
+justify-content:center;
+
+position:fixed;
+
+z-index:9999;
 
 }
 
